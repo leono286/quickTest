@@ -1,0 +1,211 @@
+/* Reset some default styles */
+html, body, header, nav, ul, li, p, h1, h2, h3, form, label, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* Set box-sizing to border-box for easier layout */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f7f8;
+  margin: 0;
+}
+
+/* Header and Navigation styles */
+header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #6d5b7f;
+}
+
+/* Introduction Section styles */
+#introduction {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #f2e9eb;
+}
+
+#introduction h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #6d5b7f;
+}
+
+/* Background and Experience Section styles */
+#background-experience {
+  padding: 60px 0;
+  text-align: center;
+  color: #333;
+  /* Add the following styles to prevent the background image from overflowing */
+  position: relative;
+  overflow: hidden;
+}
+
+#background-experience h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #6d5b7f;
+}
+
+/* Add the following styles to control the background image */
+#background-experience::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/trees-with-sun-shining.jpg');
+  /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  /* Adjust the opacity if needed */
+  z-index: -1;
+}
+
+/* Services Offered Section styles */
+#services-offered {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.service-card {
+  background-color: #d4e4df;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #6d5b7f;
+}
+
+/* Video Introduction Section styles */
+#video-introduction {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #f2e9eb;
+}
+
+/* Contact Form Section styles */
+#contact-form {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #d4e4df;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label, form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #6d5b7f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a4870;
+}
+
+/* Footer Section styles */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive Styles */
+@media only screen and (min-width: 768px) {
+
+  /* Adjust container width for larger screens */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* Increase font size for larger screens */
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  /* Increase spacing between sections for larger screens */
+  section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  /* Further adjust container width for extra-large screens */
+  .container {
+    max-width: 1140px;
+  }
+}
